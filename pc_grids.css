@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Tutorial Case
+   
+   Style Sheet for Grids used in the Pandaisia Chocolates website
+   Author: Jazzmyne Nixon
+   Date: 9/18/2019
+   
+   Filename: pc_grids.css
+
+*/
+
+/* Body Styles */
+body {
+   width: 95%;
+   min-width: 640px;
+   max-width: 960px;
+   margin-left: auto;
+   margin-right: auto;
+   line-height: 0;
+}
+body > .row > img{
+   display: block;
+   width: 100%;
+}
+body .horizontalNavigation img{
+   display: block;
+   width: 100%;
+}
+footer .verticalNavigation{
+   width: auto;
+}
+section#rightColumn img{
+   width: 100%;
+}
+/* Horizontal Navigation Styles */
+nav.horizontalNavigation li {
+   display: block;
+   float: left;
+}
+nav.horizontalNavigation a {
+   display: block;
+   text-align: center;  
+}
+/* Left Column Styles */
+section#leftColumn {
+   padding: 1.5em;
+}
+/* Grid Rows Styles */
+div.row {
+   clear: both;
+}
+div.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+/* Footer Styles */
+footer {
+   clear: left;
+   background-color: rgb(71, 52, 29);
+   height: auto;
+}
+nav.verticalNavigation {
+   float: left;
+   width: 22%;
+
+}
+section#contactInfo {
+   float: left;
+   width: 34%;
+}
+footer::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+
+/* Grid Columns Styles */
+div[class^="col-"] {
+   float: left;
+}
+div.col-1-1 {width: 100%;}
+div.col-1-2 {width: 50%;}
+div.col-1-3 {width: 33%;}
+div.col-1-4 {width: 25%;}
+div.col-2-3 {width: 67%;}
+div.col-3-4 {width: 75%;}
+div.col-1-5 {width: 20%;}
+/* Grid Outline Styles */
